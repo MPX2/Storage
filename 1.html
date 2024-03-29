@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Semicolon</title>
+  <link href="style-1.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div>
+    <div id="grid">
+      <div class="container" id="ul">
+        <div class="SmallTitleGrid">
+        <input type="text" value="제목" class="list" id="IndexTitle">
+          <input type="text" value="소제목" class="list">
+          <input type="button" class="Button" id="AddButton" onclick="addinput()">
+          <input type="button" class="Button" id="VButton" onclick="Hide_Apperance()">
+          <ul id="ul2" style="display:block">
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div id="mainText" class="hidden">
+          <input id="mainInput" type="text">
+        </div>
+        
+      </div>
+      <div class="map_wrap">
+        <button id="mainTextButton" onclick='togglemainTextButton()'>‹</button>
+
+          <div id="map"></div>
+      
+          <div id="menu_wrap" class="bg_white">
+              <div class="option">
+                  <div>
+                      <form onsubmit="searchPlaces(); return false;">
+                          키워드 : <input type="text" value="숭실대 맛집" id="keyword" size="15"> 
+                          <button type="submit">검색</button> 
+                      </form>
+                  </div>
+              </div>
+              <hr>
+              <ul id="placesList"></ul>
+              <div id="pagination"></div>
+          </div>
+      </div>
+      <div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=36cdb68768ceea4dc83f5055eb904f5a"></script>
+        <script type="text/javascript" src="mapInfo.js"></script>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="functions.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>
